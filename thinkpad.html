@@ -41,6 +41,100 @@
         color:white;
         text-decoration:none;
     }
+
+    .intro
+    {
+        position: relative;
+    }
+
+    .intro .background
+    {
+        position:relative;
+        z-index: 0;
+        width:100%;
+        display:block;
+    }
+
+    .intro .lenovo-logo
+    {
+        z-index: 1;
+        width:10%;
+        
+        position:absolute;
+        top:20px;
+        left:20px;
+    }
+
+    .intro .bold-text , .bold-text2
+    {
+        position:absolute;
+        z-index:3;
+        
+        left:20px;
+        color:white;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    .intro .bold-text{
+        top:50px;
+    }
+    .intro .bold-text2
+    {
+        top:100px;
+    }
+    .intro .buttongetnow
+    {
+        background-color: RED;
+    }
+
+    .intro .buttongetnow
+    {
+        color: white;
+        background-color: red;
+    }
+
+    .shop-btn
+    {
+        display:inline-block;
+        background-color: red;
+        color: white;
+        text-decoration: none;
+        font-size:14px;
+        font-weight: bold;
+        padding: 12px 28px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        z-index: 4;
+        position: absolute;
+        top: 300px;
+        left:20px;
+    }
+
+    .shop-btn:hover
+    {
+        background: darkred;
+    }
+    .intro .des
+    {
+        position: absolute;
+        z-index: 4;
+        top:330px;
+        left:20px;
+        color:white;
+    }
+    .WHY-CHOOSE .background
+    {
+        position: relative;
+        z-index:-1;
+        max-width:100%
+    }
+
+    .WHY-CHOOSE .thinkpad-pic
+    {
+        position: absolute;
+    }
+   
 </style>
 
 <body>
@@ -61,6 +155,19 @@
 
         </div>
     </header>
+    <div class="intro">
+        <img class="background" src="backintro.jpg" alt="intro">
+        <img class="lenovo-logo" src="lenovologo.png" alt="logo">
+        <p class="bold-text">Built for the Way </p>
+        <p class="bold-text2">Work Gets Done</p>
+        <a href="#" class="shop-btn">GET NOW</a>
+        <p class="des">For more than 30 years, Thinkpad has set the standard for rentless innovation, purposeful design</p>
+    </div>
+    <div class="WHY-CHOOSE">
+        <img class="background" src="backgroundcolor2.png" alt="second background">
+        <img class="thinkpad-pic" src="thinkpad explore.png" alt="thinkpad picture">
+        
+    </div>
 </body>
 
 </html>
