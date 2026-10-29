@@ -1,0 +1,31 @@
+div .container{
+    max-width:1980px;
+    max-height:1080px;
+}
+div .image-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin:20px;
+    gap:10px;
+}
+div .image-contaner > img{
+    width:50px;
+    height:20px;
+}
+div > h1{
+    left:50px;
+}
+footer{
+    display:inline-block;
+    padding:10px;
+}
+footer h2{
+    font-size:20px;
+    font-variant:bold;
+    color:purple;
+}
+footer p{
+    font-size:20px;
+    color:gray;
+}
