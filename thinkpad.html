@@ -94,7 +94,7 @@
         background-color: red;
     }
 
-    .shop-btn
+    .intro .shop-btn
     {
         display:inline-block;
         background-color: red;
@@ -123,6 +123,11 @@
         left:20px;
         color:white;
     }
+
+    .WHY-CHOOSE
+    {
+        margin:0px;
+    }
     .WHY-CHOOSE .background
     {
         position: relative;
@@ -130,11 +135,62 @@
         max-width:100%
     }
 
+
+
     .WHY-CHOOSE .thinkpad-pic
     {
         position: absolute;
+        z-index: 1;
+        top: 650px;
+        left:20px;
+        width:400px;
+        float: left;
     }
-   
+
+    .WHY-CHOOSE .text
+    {
+        position: absolute;
+        z-index: 1;
+        top: 650px;
+        left: 400px;
+        color:white;
+        text-align: center;
+
+    }
+
+    .WHY-CHOOSE .shop-btn
+    {
+         display:inline-block;
+        background-color: red;
+        color: white;
+        text-decoration: none;
+        font-size:14px;
+        font-weight: bold;
+        padding: 12px 28px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .DESIGN
+    {
+        background-image:linear-gradient(to top right,darkblue,lightblue,blue );
+        max-width: 100%;
+        height:500px;
+        margin:0;
+        
+    }
+
+    .thinkpad-pic2
+    {
+        width:500px;
+        float:right;
+    }
+    .DESIGN p{
+        color:white;
+        font-size: 49px;
+        font-weight:bold;
+    }
+
 </style>
 
 <body>
@@ -166,7 +222,25 @@
     <div class="WHY-CHOOSE">
         <img class="background" src="backgroundcolor2.png" alt="second background">
         <img class="thinkpad-pic" src="thinkpad explore.png" alt="thinkpad picture">
+        <div class="text">
+        <h1 >WHY CHOOSE THINKPAD ?</h1>
+        <br>
+        <p>LEGENDARY DESIGN:  Comfortable keyboard, and the iconic red Trackpoint for precise navigation.</p>
+        <br>
+        <p>Powerful Performance: Handle demanding workloads, multitasking, programming, and business applications with confidence.</p>
+        <br>
+        <a href="#" class="shop-btn">GET NOW</a>
+        </div>
+    </div>
+    <div class="DESIGN">
+        <img class="thinkpad-pic2" src="thinkpadatdesign.png" alt="thinkpad picture 2">
+        <p>DESIGN TO LAST</p>
+        <p>BEST LINUX</p>
+        <p>GREAT RELIABILITY</p>
+    </div>
+    <div class="SERIES">
         
+
     </div>
 </body>
 
