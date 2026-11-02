@@ -7,25 +7,38 @@ div .image-container{
     flex-direction:row;
     justify-content:center;
     margin:20px;
-    gap:10px;
+    gap:10%;
 }
-div .image-contaner > img{
-    width:50px;
-    height:20px;
+div > img{
+    max-width:300px;
+    width: 300px;
+    height: auto;
 }
-div > h1{
-    left:50px;
+footer > h1{
+    font-size:48px;
+    vertical-align:top;
+    margin-left:30px;
 }
 footer{
-    display:inline-block;
     padding:10px;
+    max-width:100%;
+    display:flex;
+    justify-content:space-between;
 }
-footer h2{
-    font-size:20px;
-    font-variant:bold;
-    color:purple;
+footer > div{
+    vertical-align:top;
+    width:50%;
 }
-footer p{
-    font-size:20px;
+footer > div > h1{
+    left:50px;
+    width: 30%;
+}
+footer > div > h2{
+    margin-top:35px;
+    font-size:16px;
+    color:#797be4;
+}
+footer > div > p{
+    font-size:18px;
     color:gray;
 }
