@@ -7,6 +7,363 @@
     <title>Thinkpad</title>
     <link rel="stylesheet" href="css/contactstyle.css">
 </head>
+<style>
+    .logo img {
+        width: 200px;
+        margin-right: auto;
+    }
+    *
+    {
+        box-sizing: boder-box;
+    }
+
+    body {
+        padding: 0px;
+        margin: 0px;
+        box-sizing:border-box;
+    }
+
+    .head , .head ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        gap: 20px;
+
+
+    }
+
+    .head ul
+    {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left:auto;
+        gap: 60px;
+        list-style:none;
+    }
+
+    .head ul > li > a
+    {
+        text-align: center;
+        color:white;
+        text-decoration:none;
+        font-size: 20px;
+    }
+
+    .intro-background
+    {
+        background-image: url(backintro.jpg);
+        width:100%;
+        height:1000px;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .lenovo-logo
+    {
+        width:250px;
+        margin:50px 20px;
+    }
+
+    .intro-background h1
+    {
+        color:white;
+        font-size:90px;
+        margin: 0 0 100px 20px;
+    }
+
+    .red-button{
+        background-color: red;
+        color: white;
+        border:none;
+        padding:15px 40px;
+        font-weight:bold;
+        cursor: pointer;
+        font-size:20px;
+        margin-left:25px;
+    }
+
+    .intro-background p {
+        color:white;
+        font-size:25px;
+        line-height: 2;
+        max-width:550px;
+        margin-left:25px;
+
+    }
+
+    .why-thinkpad
+    {
+        color:white;
+        background-image: url(backgroundcolor2.png);
+        background-position: center;
+        background-size: cover;
+        width:100%;
+        height:1000px;
+        margin:0px;
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .think-explore
+    {
+        width:100%;
+        max-width: 700px;
+        height:auto;
+        object-fit:contain;
+        margin:0;
+
+    }
+
+    .thinkpad-content
+    {
+        width:45%;
+        color:white;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .thinkpad-content h1{
+        font-size:50px;
+        margin-bottom: 30px;
+    }
+
+    .thinkpad-content p
+    {
+        font-size:30px;
+        line-height: 1.5;
+        margin-bottom:15px;
+    }
+
+    .red-button2{
+        background-color: red;
+        color: white;
+        border:none;
+        padding:15px 80px;
+        font-weight:bold;
+        cursor: pointer;
+        font-size:20px;
+        margin-left:25px;
+    }
+
+    .design-section
+    {
+        width:100%;
+        height:auto;
+        margin:0;
+        background: linear-gradient(to right bottom, darkblue,lightblue,blue);
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+
+        display:flex;
+        align-items: center;
+        padding:30px;
+        justify-content: center;
+        box-sizing: border-box;
+        overflow:hidden;
+    }
+
+    .design-content
+    {
+        width:100%;
+        color:white;
+    }
+
+    .design-content h1{
+        font-size:100px;
+        line-height:1.3;
+        margin:0;
+    }
+
+    .design-content p
+    {
+        font-size:50px;
+    }
+
+    .design-image
+    {
+        width:100%;
+    }
+
+    .design-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-left: auto;
+}
+
+.series-section
+{
+    background: linear-gradient(to top left,blue,lightblue,darkblue);
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height:1000px;
+    margin:0;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    box-sizing: border-box;
+    padding:30px;
+
+}
+
+.series-img
+{
+    margin-right: auto;
+}
+
+.series-img img
+{
+    width:100%;
+    max-width:800px;
+
+
+}
+
+.series-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.series-content h1
+{
+    color:white;
+    font-size: 50px;
+
+}
+
+.series-content p
+{
+    font-size: 30px;
+
+}
+
+.series-content a
+{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    line-height: 1.5;
+    transition: transform 0.9s ease, color 0.3s ease;
+}
+
+.series-content a:hover
+{
+    transform: scale(1.2);
+    color:red;
+}
+
+.series-content a:last-child:hover
+{
+    transform:scale(1.2);
+    color:black;
+}
+
+
+
+
+
+</style>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="logo">
+                <a href="#"><img src="images.png" alt="THINKPAD"></a>
+            </div>
+
+            <ul>
+
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Services</a></li>
+           <li><a href="#">Support</a></li>
+            <li><a href="#">About Lenovo</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="intro-background">
+            <img class="lenovo-logo" src="lenovologo.png" alt="LENOVO">
+            <h1>Built for the Way<br>Work Gets Done </h1>
+            <button class="red-button">GET NOW</button>
+
+            <p>
+                For more than 30 years, Thinkpad has set the standard
+                for rentless innovation. purposeful design.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="why-thinkpad">
+            <img class="think-explore" src="thinkpad explore.png" alt="thinkpad">
+
+
+
+            <div class="thinkpad-content">
+                <h1>WHY CHOOSE THINKPAD</h1>
+            <p>
+                <strong>LEGENDARY DESIGN</strong>
+                Comfortable keyboard, and the iconnic red Trackpoint
+                for precise navigation.
+            </p>
+
+
+            <p>
+                <strong>POWERFUL PERFORMANCE</strong>
+                Handle demanding workloads, multitasking, programming,
+                and business applications with confidence.
+
+            </p>
+              <button class="red-button2">GET</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="design-section">
+        <div class="design-content">
+            <h1>
+                DESIGN TO LAST<br>
+                BEST LINUX<br>
+                GREAT RELIABILITY
+            </h1>
+            <p>Built to last. Designed for reliability.</p>
+        </div>
+        <div class="design-image">
+            <img src="thinkpadatdesign.png" alt="Thinkpad design">
+        </div>
+    </section>
+
+    <section class="series-section">
+        <div class="series-img">
+            <img src="Laptop ThinkPad với menu Start Windows 11.png" alt="thinkpad2">
+        </div>
+
+        <div class="series-content">
+            <h1>Explore the Thinkpad family</h1>
+            <p><a href="https://www.lenovo.com/vn/vi/c/laptops/thinkpad/thinkpadx/" target="_blank">ThinkPad X Series</a> <br>
+            <a href="https://www.lenovo.com/vn/vi/c/laptops/thinkpad/thinkpadt/" target="_blank">ThinkPad T Series</a>  <br>
+            <a href="https://www.lenovo.com/vn/vi/c/laptops/thinkpad/thinkpade/" target="_blank">ThinkPad E Series</a> <br>
+            <a href="https://www.lenovo.com/vn/vi/c/laptops/thinkpad/thinkpadp/" target="_blank">ThinkPad P Series</a> </p>
+        </div>
+    </section>
+
 
         
     <div class="contact">

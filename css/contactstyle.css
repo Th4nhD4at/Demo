@@ -1,5 +1,5 @@
 div .contact {
-    max-width:1980px;
+    max-width:1920px;
     max-height:1080px;
 }
  div .image-container{
@@ -20,6 +20,8 @@ footer > h1{
     margin-left:30px;
 }
 footer{
+    margin-bottom:1px;
+    margin-top:auto
     padding:10px;
     max-width:100%;
     display:flex;
