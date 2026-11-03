@@ -1,15 +1,15 @@
-div .container{
+div .contact {
     max-width:1980px;
     max-height:1080px;
 }
-div .image-container{
+ div .image-container{
     display:flex;
     flex-direction:row;
     justify-content:center;
     margin:20px;
     gap:10%;
 }
-div > img{
+.contact img {
     max-width:300px;
     width: 300px;
     height: auto;
@@ -33,7 +33,7 @@ footer > div > h1{
     left:50px;
     width: 30%;
 }
-footer > div > h2{
+footer > div > h2 {
     margin-top:35px;
     font-size:16px;
     color:#797be4;
