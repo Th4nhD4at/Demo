@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+</head>
+<style>
+    *
+    {
+        margin:0;
+
+    }
+    body,button {
+			font-family: "Inter", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: bold;
+			font-style: normal;
+		}
+    .menu
+    {
+        display:flex;
+        flex-direction: row;
+        gap:20px;
+        background-color: black;
+        align-items: center;
+        color:white;
+        gap:50px;
+    }
+    .menu img
+    {
+        width:20%;
+    }
+    
+    .menu a
+    {
+        font-size: 25px;
+        text-decoration: none;
+        color:white;
+        
+    }
+    input
+    {
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+    }
+      .ad 
+    {
+        width:100%;
+    }
+
+    .shops
+    {
+        display:grid;
+        grid-template-columns: repeat(5,1fr);
+    }
+    .shop
+    {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        gap:10px;
+    }
+
+    .shop img
+    {
+        
+        width:50%;
+        border-bottom: 1px solid black;
+        object-fit: contain;
+    }
+    .price
+    {
+        color:red;
+        font-weight: bold;
+    }
+    .shop button
+    {
+        width:100px;
+        background-color: red;
+        color:white;
+        border:none;
+        padding:5px auto;
+        cursor: pointer;
+
+    }
+
+       
+  
+
+    
+</style>
+<body>
+    <section>
+        <div class="menu">
+            <img src="lenovologo.png" alt="Lenovo">
+            <a href="#">X Series</a>
+            <a href="#">P series</a>
+            <a href="#">T Series</a>
+            <a href="#">L Series</a>
+            <a href="#">E Series</a>
+            <a href="#">Z Series</a>
+
+        </div>
+        <input type="text" placeholder="Search...">
+
+    </section>
+
+
+    <img class="ad" src="Thinkpad E16 Gen4.png" alt="advertise">
+
+
+    <section class="shops">
+    <div class="shop">
+        <img src="ThinkPad X1 Carbon Gen 13.jpg" alt="X1 Carbon Gen 13">
+        <p>ThinkPad X1 Carbon Gen 13</p>
+        <p class="price">54,990,000₫</p>
+        <button>GET</button>
+    </div>
+
+    <div class="shop">
+        <img src="ThinkPad T14 Gen 6.jpg" alt="ThinkPad T14 Gen 6">
+        <p>ThinkPad T14 Gen 6</p>
+        <p class="price">34,500,000₫</p>
+        <button>GET</button>
+    </div>
+
+    <div class="shop">
+        <img src="ThinkPad X13 Gen 5.jpg" alt="ThinkPad X13 Gen 5">
+        <p>ThinkPad X13 Gen 5</p>
+        <p class="price">21,990,000₫</p>
+        <button>GET</button>
+    </div>
+
+    <div class="shop">
+        <img src="ThinkPad P16 Gen 2.jpg" alt="ThinkPad P16 Gen 2">
+        <p>ThinkPad P16 Gen 2</p>
+        <p class="price">Contact for price</p>
+        <button>GET</button>
+    </div>
+
+    <div class="shop">
+        <img src="ThinkPad E14 Gen 6.jpg" alt="ThinkPad E14 Gen 6">
+        <p>ThinkPad E14 Gen 6</p>
+        <p class="price">27,890,000₫</p>
+        <button>GET</button>
+    </div>
+
+    <div class="shop">
+        <img src="ThinkPad L16 Gen 2.jpg" alt="ThinkPad L16 Gen 2">
+        <p>ThinkPad L16 Gen 2</p>
+        <p class="price">25,800,000₫</p>
+        <button>GET</button>
+    </div>
+
+    <div class="shop">
+        <img src="ThinkPad X9-14 Gen 1.jpg" alt="ThinkPad X9-14">
+        <p>ThinkPad X9-14 Gen 1</p>
+        <p class="price">43,990,000₫</p>
+        <button>GET</button>
+    </div>
+
+    <div class="shop">
+        <img src="ThinkPad P1 Gen 8.jpg" alt="ThinkPad P1 Gen 8">
+        <p>ThinkPad P1 Gen 8</p>
+        <p class="price">Contact for price</p>
+        <button>GET</button>
+    </div>
+
+    
+</section>
+
+</body>
+</html>

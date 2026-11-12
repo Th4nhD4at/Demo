@@ -1,0 +1,46 @@
+div .contact {
+    max-width:1920px;
+    max-height:1080px;
+}
+div .image-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin:20px;
+    gap:10%;
+}
+.contact img {
+    max-width:300px;
+    width: 300px;
+    height: auto;
+}
+footer > h1{
+    font-size:48px;
+    vertical-align:top;
+    margin-left:30px;
+}
+footer{
+    margin-bottom:1px;
+    margin-top:auto
+    padding:10px;
+    max-width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+footer > div{
+    vertical-align:top;
+    width:50%;
+}
+footer > div > h1{
+    left:50px;
+    width: 30%;
+}
+footer > div > h2 {
+    margin-top:35px;
+    font-size:16px;
+    color:#797be4;
+}
+footer > div > p{
+    font-size:18px;
+    color:gray;
+}
