@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
 			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 			rel="stylesheet"
 		/>
+    <script src="scripts/itemList.js"></script>
 </head>
 <style>
     *
@@ -93,13 +94,38 @@
         cursor: pointer;
 
     }
-
-       
-  
+    .cart{
+        margin-left:auto;
+        margin-right:6px;
+    }
+    #suggestItemsList il{
+        z-index:10;
+        max-height:70px;
+        border: 1px solid black;
+        position:relative;
+    }
+    .search{
+        display:flex;
+        align-content:center;
+        justify-content:space-between;
+        margin:0;
+        padding:6px;
+    }
+    .search input{
+        padding-right:auto;
+    }
+    .search button{
+        margin: 0 5px 0 5px ;
+    }
+    #cart{
+        display:none;
+    }
 
     
 </style>
 <body>
+    <script src="scripts/cartAndBuy.js"></script>
+    <script src="scripts/main.js"></script>
     <section>
         <div class="menu">
             <img src="lenovologo.png" alt="Lenovo">
@@ -109,10 +135,14 @@
             <a href="#">L Series</a>
             <a href="#">E Series</a>
             <a href="#">Z Series</a>
-
+            <button onclick="toggleCart()" class="cart-popup"><img src="cart" id="itemsInCart" alt="Ze Cart"></button>
+            <button id="cart" onclick="submitCart()">Cart</button>
         </div>
-        <input type="text" placeholder="Search...">
-
+        <div class="search">
+        <input type="text" placeholder="Search..." id="searchInput">
+        <button type="submit" id="searchSubmit">Search</button>
+        <ul id="suggestItemsList"></ul>
+        </div>
     </section>
 
 
@@ -124,56 +154,56 @@
         <img src="ThinkPad X1 Carbon Gen 13.jpg" alt="X1 Carbon Gen 13">
         <p>ThinkPad X1 Carbon Gen 13</p>
         <p class="price">54,990,000₫</p>
-        <button>GET</button>
+        <button onclick="addToCart('ThinkPad X1 Carbon Gen 13')">GET</button>
     </div>
 
     <div class="shop">
         <img src="ThinkPad T14 Gen 6.jpg" alt="ThinkPad T14 Gen 6">
         <p>ThinkPad T14 Gen 6</p>
         <p class="price">34,500,000₫</p>
-        <button>GET</button>
+        <button onclick="addToCart('ThinkPad T14 Gen 6')">GET</button>
     </div>
 
     <div class="shop">
         <img src="ThinkPad X13 Gen 5.jpg" alt="ThinkPad X13 Gen 5">
         <p>ThinkPad X13 Gen 5</p>
         <p class="price">21,990,000₫</p>
-        <button>GET</button>
+        <button onclick="addToCart('ThinkPad X13 Gen 5')">GET</button>
     </div>
 
     <div class="shop">
         <img src="ThinkPad P16 Gen 2.jpg" alt="ThinkPad P16 Gen 2">
         <p>ThinkPad P16 Gen 2</p>
         <p class="price">Contact for price</p>
-        <button>GET</button>
+        <button onclick="addToCart('ThinkPad P16 Gen 2')">GET</button>
     </div>
 
     <div class="shop">
         <img src="ThinkPad E14 Gen 6.jpg" alt="ThinkPad E14 Gen 6">
         <p>ThinkPad E14 Gen 6</p>
         <p class="price">27,890,000₫</p>
-        <button>GET</button>
+        <button onclick="addToCart('ThinkPad E14 Gen 6')">GET</button>
     </div>
 
     <div class="shop">
         <img src="ThinkPad L16 Gen 2.jpg" alt="ThinkPad L16 Gen 2">
         <p>ThinkPad L16 Gen 2</p>
         <p class="price">25,800,000₫</p>
-        <button>GET</button>
+        <button onclick="addToCart('ThinkPad L16 Gen 2')">GET</button>
     </div>
 
     <div class="shop">
         <img src="ThinkPad X9-14 Gen 1.jpg" alt="ThinkPad X9-14">
         <p>ThinkPad X9-14 Gen 1</p>
         <p class="price">43,990,000₫</p>
-        <button>GET</button>
+        <button onclick="addToCart('ThinkPad X9-14')">GET</button>
     </div>
 
     <div class="shop">
         <img src="ThinkPad P1 Gen 8.jpg" alt="ThinkPad P1 Gen 8">
         <p>ThinkPad P1 Gen 8</p>
         <p class="price">Contact for price</p>
-        <button>GET</button>
+        <button onclick="addToCart('ThinkPad P1 Gen 8')">GET</button>
     </div>
 
     
