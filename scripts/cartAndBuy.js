@@ -25,7 +25,11 @@ function addToCart(name){ //Give a name "string" into this place
     if (j>=itemList.length){
         return;
     }
-    let newItem = baseObject;
+    let newItem = {name:"",
+        price:0,
+        count:0,
+    }
+    ;
     newItem.name=itemList[j].name;
     newItem.price=itemList[j].price;
     newItem.count=1;
